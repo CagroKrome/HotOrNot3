@@ -4,12 +4,9 @@
     justify-content: space-between;
     background-color: white;
 
-    padding: 15px 20%;
+    padding: 15px 20vw;
 
-    position: sticky;
-    width: 100%;
-    top: 0;
-    left: 0;
+    width: 100vw;
 
     z-index: 5000;
 
@@ -38,4 +35,18 @@
 
 .navbar-icon {
     font-size: 1.5rem;
+}
+
+@media (max-width: 490px) {
+    .navbar {
+        padding: 15px 15%;
+    }
+
+    .navbar-element {
+        font-size: 0.8rem;
+    }
+
+    .navbar-icon {
+        font-size: 1.2rem;
+    }
 }
