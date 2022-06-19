@@ -1,6 +1,6 @@
 {
   "name": "client",
-  "homepage": "https://cagrokrome.github.io/HotOrNot3/",
+  "homepage": "https://heorc.netlify.app/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
