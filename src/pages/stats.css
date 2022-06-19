@@ -1,0 +1,36 @@
+@keyframes fancy {
+    0% {
+        transform: scale(0.4)
+    }
+    50% {
+        transform: scale(1.1)
+    }
+}
+
+.stats-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    background-color: white;
+    width: 500px;
+    padding: 10px;
+    animation: fancy 0.6s ease;
+}
+
+.stats-app {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 0px;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.stats-box-likes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+}

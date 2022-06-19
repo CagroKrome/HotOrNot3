@@ -1,0 +1,139 @@
+@keyframes load{
+    0% {
+        opacity: 0%;
+        transform: translateY(-73px);
+
+    }
+
+    20% {
+        opacity: 0%;
+        transform: scale(0) rotate(500deg) translateY(-73px); 
+    }
+
+    60% {
+        opacity: 100%;
+        transform: scale(1.1) rotate(-12deg) translateY(-73px);
+    }
+}
+
+.box {
+    min-width: calc(480px * 1.2);
+    max-width: 60%;
+    min-height: calc(300px * 1.2);
+    max-height: 60%;
+    background-color: white;
+    padding: 30px;
+    transform: translateY(-73px);
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+
+    animation: load 1.5s ease;
+
+    user-select: none;
+}
+
+.boxes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.buttons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 90px;
+}
+
+.box-title {
+    font-size: 4.3rem;
+}
+
+.hot-btn, .not-btn {
+    font-size: 4rem;
+    flex-grow: 1;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.not-btn {
+    background-color: hsl(0, 0%, 90%);
+}
+
+.not-btn:hover {
+    background-color: hsl(0, 0%, 85%);
+}
+
+.hot-btn {
+    background-color: hsl(345, 60%, 70%);
+    color: white;
+    font-weight: 600;
+}
+
+.hot-btn:hover {
+    background-color: hsl(345, 60%, 65%);
+}
+
+.btn {
+    outline: none;
+    border: none;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s ease-out;
+}
+
+.information {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.box-likes {
+    font-size: 1.5rem;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box-likes .heart {
+    font-size: 2rem;
+}
+
+.loader {
+    width: 100px;
+    height: 100px;
+    border-radius: 75px;
+    border: 20px transparent solid;
+    border-top: 20px hsl(345, 60%, 70%) solid;
+    position: absolute;
+    top: calc(50% - 50px);
+    left: calc(50% - 50px);
+    animation: spin ease 1.4s infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(50deg);
+    }
+    
+    50% {
+        transform: rotate(-550deg);
+        border-left: 20px hsl(345, 60%, 60%) solid;
+    }
+
+    100% {
+        transform: rotate(50deg)
+    }
+}
