@@ -6,7 +6,7 @@ import { store } from './redux/store';
 import {BrowserRouter as Router, Route, Routes} from 'react-router-dom'
 import Home from './pages/Home';
 import Stats from './pages/Stats';
-import About from './pages/About';
+import Add from './pages/Add';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -19,7 +19,7 @@ function App() {
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='stats' element={<Stats />} />
-                        <Route path='about' element={<About />} />
+                        <Route path='add' element={<Add />} />
                     </Routes>
                 </Provider>
             </Router>

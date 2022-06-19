@@ -1,7 +1,7 @@
 import React from 'react'
 import { HiHome } from 'react-icons/hi'
 import { HiOutlinePresentationChartLine } from 'react-icons/hi'
-import { HiGlobe } from 'react-icons/hi'
+import { HiPlusCircle } from 'react-icons/hi'
 import './navbar.css'
 
 function Navbar(props) {
@@ -17,9 +17,9 @@ function Navbar(props) {
             <p>Statistics</p>
         </a>
 
-        <a href='about' className={'about navbar-element ' + props.about}>
-            <HiGlobe className='navbar-icon' />  
-            <p>About</p>
+        <a href='add' className={'add navbar-element ' + props.add}>
+            <HiPlusCircle className='navbar-icon' />  
+            <p>Add Post</p>
         </a>
     </div>
   )

@@ -43,7 +43,7 @@ function SingleBox() {
 
           <h1 className='box-title'>{isFinished ? "You've seen the whole universe." : array[index].text}</h1>
 
-          <h3 style={isFinished ? {display: "none"} : {display: "block"}} className='box-likes'>
+          <h3 style={isFinished ? {display: "none"} : {display: "flex"}} className='box-likes'>
             <HiHeart className='heart'/>
             {array[index].likes}
           </h3>
