@@ -20,8 +20,7 @@ function Add() {
     } else {
         axios.post('https://ckhot.herokuapp.com/add', {
           text: postValue
-        })
-        navigate('/')
+        }).then(navigate('/'))
     }
   }
 

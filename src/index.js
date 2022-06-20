@@ -11,12 +11,14 @@ import Add from './pages/Add';
 const container = document.getElementById('root');
 const root = createRoot(container);
 
+console.log("%cMade by @ckdsgn_ with ❤️", "color:hsl(345, 60%, 70%); font-size: 30px");
+
 function App() {
     return (
         <React.StrictMode>
             <Router>
                 <Provider store={store}>
-                    <Routes>
+                    <Routes>❤️
                         <Route path='/' element={<Home />} />
                         <Route path='stats' element={<Stats />} />
                         <Route path='add' element={<Add />} />
