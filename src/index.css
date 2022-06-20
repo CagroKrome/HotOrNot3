@@ -14,3 +14,10 @@ html, body {
 body {
     background-color: hsl(0, 0%, 95%);
 }
+
+.signature {
+    position: absolute;
+    font-size: 0.7rem;
+    bottom: 5px;
+    left: 5px;
+}
