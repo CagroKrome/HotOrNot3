@@ -18,7 +18,7 @@ function App() {
         <React.StrictMode>
             <Router>
                 <Provider store={store}>
-                    <p className='signature'>Made by <a href='https://instagram/ckdsgn_'>@ckdsgn_</a> with love</p>
+                    <p className='signature'>Made by <a href='https://www.instagram.com/ckdsgn_/'>@ckdsgn_</a> with love</p>
                     <Routes>
                         <Route path='/' element={<Home />} />
                         <Route path='stats' element={<Stats />} />
