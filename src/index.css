@@ -16,7 +16,7 @@ body {
 }
 
 .signature {
-    position: absolute;
+    position: fixed;
     font-size: 0.7rem;
     bottom: 5px;
     left: 5px;
